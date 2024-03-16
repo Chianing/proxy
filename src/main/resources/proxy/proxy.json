@@ -1,0 +1,28 @@
+[
+  {
+    "mockUrl": "/testGet",
+    "mockResult": {
+      "code": 200,
+      "message": "success"
+    },
+    "nextNode": {
+      "mockUrl": "http://localhost:8080/self/test",
+      "method": "GET"
+    }
+  },
+  {
+    "mockUrl": "/testPost",
+    "mockResult": {
+      "code": 200,
+      "message": "success"
+    },
+    "nextNode": {
+      "mockUrl": "http://localhost:8080/self/test",
+      "method": "POST",
+      "params": {
+        "key1": "value1",
+        "key2": "value2"
+      }
+    }
+  }
+]
